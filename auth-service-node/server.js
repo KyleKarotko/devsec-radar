@@ -7,13 +7,13 @@ const app = express();
 // 3. Define the port number our server will listen on
 const PORT = 5001;
 
-// 4. Create our first "Route". 
+// 4. Create our first "Route".
 // When someone visits http://localhost:5001/, this function triggers.
 app.get('/', (req, res) => {
-    res.send('Auth Service API is live and running!');
+  res.send('Auth Service Sandbox Mode!');
 });
 
 // 5. Tell the server to start listening for incoming traffic
 app.listen(PORT, () => {
-    console.log(`Server is running smoothly on http://localhost:${PORT}`);
+  console.log(`Server is running smoothly on http://localhost:${PORT}`);
 });
